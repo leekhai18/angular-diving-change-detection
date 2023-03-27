@@ -1,0 +1,9 @@
+<button (click)="console.log('lv1 btn clicked')" [style.background-color]="(subject$|async) ? 'red' : 'white'">lv1</button>
+
+<div style="display: flex; justify-content: center;margin-top: 10px; gap: 10px;">
+  <app-lv2></app-lv2>
+  <app-lv2></app-lv2>
+</div>
+
+
+<div *ngIf="reEvaluate()"></div>
